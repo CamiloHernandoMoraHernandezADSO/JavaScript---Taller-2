@@ -1,17 +1,20 @@
 addEventListener("DOMContentLoaded", (e)=>{
 
     /*
-        Ejercicio 8
-        Pinturas “La brocha gorda” requiere determinar cuánto cobrar por trabajos de pintura. Considere que 
-        se cobra por m2 y realice el código que representen el algoritmo que le permita ir generando 
-        presupuestos para cada cliente.
+        Ejercicio 9
+        Una empresa que contrata personal requiere determinar la edad de las personas que solicitan trabajo, 
+        pero cuando se les realiza la entrevista sólo se les pregunta el año en que nacieron. Realice el código 
+        que representen el algoritmo para solucionar este problema.
+        Al final debe entregar el nombre de la persona entrevistada en mayúscula sostenida y minunscula 
+        sostenida y la edad del entrevistado
     */
     
-        let m2, costo, total
+        let anio, actual, edad
+        actual = 2022
+        nombre = prompt(`Ingrese el nombre del empleado`)
+        anio = Number(prompt(`Ingrese el año de nacimiento`))
+        edad = actual - anio
     
-        m2 = Number(prompt("Ingrese la cantidad de m²"))
-        costo = Number(prompt("Ingrese el costo el trabajo"))
-        total = m2 * costo
+        alert(`La edad de ${nombre} es ${edad} `)
     
-        alert(`El costo del trabajo es:  ${total}`)
-})
+    })
